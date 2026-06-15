@@ -8,6 +8,13 @@ class Txikijs < Formula
   license "MIT"
   head "https://github.com/saghul/txiki.js.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/saghul/homebrew-tap/releases/download/txikijs-26.5.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "55197727fc6019a102b160e3fcc6863d572ad9f63945ea54a6c1c925548f8f42"
+    sha256 cellar: :any_skip_relocation, sequoia:      "70e051658d21103c372c15049943e298c4e49d3ff5ea4172e3e2a5e01773ab25"
+    sha256 cellar: :any,                 x86_64_linux: "e42feeffc0e1c92eb0cf182d76cf96ca3a0b8726c1aa39c8c014eda924837dcb"
+  end
+
   depends_on "cmake" => :build
 
   def install
