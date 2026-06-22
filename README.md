@@ -1,4 +1,4 @@
-# Saghul Tap
+# Saghul's Tap
 
 ## How do I install these formulae?
 
